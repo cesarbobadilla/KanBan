@@ -1,0 +1,12 @@
+D:\Repositorio\git_server\BackEnd\MACRO.Common\bin\Release\MACRO.Common.dll
+D:\Repositorio\git_server\BackEnd\MACRO.Common\bin\Release\MACRO.Common.pdb
+D:\Repositorio\git_server\BackEnd\MACRO.Common\bin\Release\Microsoft.Practices.ServiceLocation.dll
+D:\Repositorio\git_server\BackEnd\MACRO.Common\bin\Release\Microsoft.Practices.Unity.dll
+D:\Repositorio\git_server\BackEnd\MACRO.Common\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+D:\Repositorio\git_server\BackEnd\MACRO.Common\bin\Release\Microsoft.Practices.ServiceLocation.xml
+D:\Repositorio\git_server\BackEnd\MACRO.Common\bin\Release\Microsoft.Practices.Unity.xml
+D:\Repositorio\git_server\BackEnd\MACRO.Common\obj\Release\MACRO.Common.csprojAssemblyReference.cache
+D:\Repositorio\git_server\BackEnd\MACRO.Common\obj\Release\MACRO.Common.csproj.CoreCompileInputs.cache
+D:\Repositorio\git_server\BackEnd\MACRO.Common\obj\Release\MACRO.Common.csproj.CopyComplete
+D:\Repositorio\git_server\BackEnd\MACRO.Common\obj\Release\MACRO.Common.dll
+D:\Repositorio\git_server\BackEnd\MACRO.Common\obj\Release\MACRO.Common.pdb

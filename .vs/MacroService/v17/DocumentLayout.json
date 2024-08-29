@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Joss\\Desktop\\BackEnd\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{16EE2D87-C396-41D2-8088-6BA9ABFC67E2}|MACRO.Repositorio\\MACRO.Repositorio.csproj|c:\\users\\joss\\desktop\\backend\\macro.repositorio\\repositorioef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16EE2D87-C396-41D2-8088-6BA9ABFC67E2}|MACRO.Repositorio\\MACRO.Repositorio.csproj|solutionrelative:macro.repositorio\\repositorioef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D564B108-F956-4F1D-84E7-92AB4D692407}|MACRO.WebApi\\MACRO.WebApi.csproj|C:\\Users\\Joss\\Desktop\\BackEnd\\macro.webapi\\controllers\\macroserviciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D564B108-F956-4F1D-84E7-92AB4D692407}|MACRO.WebApi\\MACRO.WebApi.csproj|solutionrelative:macro.webapi\\controllers\\macroserviciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19E56F12-94E8-4C7D-8883-EE76CEDCCC1D}|MACRO.Servicio\\MACRO.Servicio.csproj|C:\\Users\\Joss\\Desktop\\BackEnd\\macro.servicio\\servicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19E56F12-94E8-4C7D-8883-EE76CEDCCC1D}|MACRO.Servicio\\MACRO.Servicio.csproj|solutionrelative:macro.servicio\\servicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D564B108-F956-4F1D-84E7-92AB4D692407}|MACRO.WebApi\\MACRO.WebApi.csproj|C:\\Users\\Joss\\Desktop\\BackEnd\\macro.webapi\\authorization\\implementaciones\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D564B108-F956-4F1D-84E7-92AB4D692407}|MACRO.WebApi\\MACRO.WebApi.csproj|solutionrelative:macro.webapi\\authorization\\implementaciones\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D564B108-F956-4F1D-84E7-92AB4D692407}|MACRO.WebApi\\MACRO.WebApi.csproj|C:\\Users\\Joss\\Desktop\\BackEnd\\macro.webapi\\authorization\\tokenauthenticate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D564B108-F956-4F1D-84E7-92AB4D692407}|MACRO.WebApi\\MACRO.WebApi.csproj|solutionrelative:macro.webapi\\authorization\\tokenauthenticate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBBD75C5-55F5-4F84-AE72-DD8576D51F43}|MACRO.Entidad\\MACRO.Entidad.csproj|C:\\Users\\Joss\\Desktop\\BackEnd\\macro.entidad\\entidadesdto\\parameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBBD75C5-55F5-4F84-AE72-DD8576D51F43}|MACRO.Entidad\\MACRO.Entidad.csproj|solutionrelative:macro.entidad\\entidadesdto\\parameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D564B108-F956-4F1D-84E7-92AB4D692407}|MACRO.WebApi\\MACRO.WebApi.csproj|C:\\Users\\Joss\\Desktop\\BackEnd\\macro.webapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D564B108-F956-4F1D-84E7-92AB4D692407}|MACRO.WebApi\\MACRO.WebApi.csproj|solutionrelative:macro.webapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19E56F12-94E8-4C7D-8883-EE76CEDCCC1D}|MACRO.Servicio\\MACRO.Servicio.csproj|C:\\Users\\Joss\\Desktop\\BackEnd\\macro.servicio\\servicioseguridad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19E56F12-94E8-4C7D-8883-EE76CEDCCC1D}|MACRO.Servicio\\MACRO.Servicio.csproj|solutionrelative:macro.servicio\\servicioseguridad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D564B108-F956-4F1D-84E7-92AB4D692407}|MACRO.WebApi\\MACRO.WebApi.csproj|C:\\Users\\Joss\\Desktop\\BackEnd\\macro.webapi\\authorization\\authenticationfailureresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D564B108-F956-4F1D-84E7-92AB4D692407}|MACRO.WebApi\\MACRO.WebApi.csproj|solutionrelative:macro.webapi\\authorization\\authenticationfailureresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBBD75C5-55F5-4F84-AE72-DD8576D51F43}|MACRO.Entidad\\MACRO.Entidad.csproj|C:\\Users\\Joss\\Desktop\\BackEnd\\macro.entidad\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{EBBD75C5-55F5-4F84-AE72-DD8576D51F43}|MACRO.Entidad\\MACRO.Entidad.csproj|solutionrelative:macro.entidad\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MacroServicioController.cs",
+              "DocumentMoniker": "C:\\Users\\Joss\\Desktop\\BackEnd\\MACRO.WebApi\\Controllers\\MacroServicioController.cs",
+              "RelativeDocumentMoniker": "MACRO.WebApi\\Controllers\\MacroServicioController.cs",
+              "ToolTip": "C:\\Users\\Joss\\Desktop\\BackEnd\\MACRO.WebApi\\Controllers\\MacroServicioController.cs",
+              "RelativeToolTip": "MACRO.WebApi\\Controllers\\MacroServicioController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAewCsAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-22T15:52:37.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Servicios.cs",
+              "DocumentMoniker": "C:\\Users\\Joss\\Desktop\\BackEnd\\MACRO.Servicio\\Servicios.cs",
+              "RelativeDocumentMoniker": "MACRO.Servicio\\Servicios.cs",
+              "ToolTip": "C:\\Users\\Joss\\Desktop\\BackEnd\\MACRO.Servicio\\Servicios.cs",
+              "RelativeToolTip": "MACRO.Servicio\\Servicios.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAewB4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-22T15:52:37.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RepositorioEF.cs",
+              "DocumentMoniker": "C:\\Users\\Joss\\Desktop\\BackEnd\\MACRO.Repositorio\\RepositorioEF.cs",
+              "RelativeDocumentMoniker": "MACRO.Repositorio\\RepositorioEF.cs",
+              "ToolTip": "C:\\Users\\Joss\\Desktop\\BackEnd\\MACRO.Repositorio\\RepositorioEF.cs",
+              "RelativeToolTip": "MACRO.Repositorio\\RepositorioEF.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHkAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-22T15:52:37.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Joss\\Desktop\\BackEnd\\MACRO.WebApi\\Authorization\\Implementaciones\\AuthService.cs",
+              "RelativeDocumentMoniker": "MACRO.WebApi\\Authorization\\Implementaciones\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Joss\\Desktop\\BackEnd\\MACRO.WebApi\\Authorization\\Implementaciones\\AuthService.cs",
+              "RelativeToolTip": "MACRO.WebApi\\Authorization\\Implementaciones\\AuthService.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAhwD8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-22T15:52:37.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TokenAuthenticate.cs",
+              "DocumentMoniker": "C:\\Users\\Joss\\Desktop\\BackEnd\\MACRO.WebApi\\Authorization\\TokenAuthenticate.cs",
+              "RelativeDocumentMoniker": "MACRO.WebApi\\Authorization\\TokenAuthenticate.cs",
+              "ToolTip": "C:\\Users\\Joss\\Desktop\\BackEnd\\MACRO.WebApi\\Authorization\\TokenAuthenticate.cs",
+              "RelativeToolTip": "MACRO.WebApi\\Authorization\\TokenAuthenticate.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAQwEcAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-22T15:52:37.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Parameters.cs",
+              "DocumentMoniker": "C:\\Users\\Joss\\Desktop\\BackEnd\\MACRO.Entidad\\EntidadesDTO\\Parameters.cs",
+              "RelativeDocumentMoniker": "MACRO.Entidad\\EntidadesDTO\\Parameters.cs",
+              "ToolTip": "C:\\Users\\Joss\\Desktop\\BackEnd\\MACRO.Entidad\\EntidadesDTO\\Parameters.cs",
+              "RelativeToolTip": "MACRO.Entidad\\EntidadesDTO\\Parameters.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-22T15:52:37.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Joss\\Desktop\\BackEnd\\MACRO.WebApi\\Web.config",
+              "RelativeDocumentMoniker": "MACRO.WebApi\\Web.config",
+              "ToolTip": "C:\\Users\\Joss\\Desktop\\BackEnd\\MACRO.WebApi\\Web.config",
+              "RelativeToolTip": "MACRO.WebApi\\Web.config",
+              "ViewState": "AQIAABIAAAAAAAAAAAAQwBkAAACYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2023-12-22T15:52:37.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Joss\\Desktop\\BackEnd\\MACRO.Entidad\\App.config",
+              "RelativeDocumentMoniker": "MACRO.Entidad\\App.config",
+              "ToolTip": "C:\\Users\\Joss\\Desktop\\BackEnd\\MACRO.Entidad\\App.config",
+              "RelativeToolTip": "MACRO.Entidad\\App.config",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBIAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2023-12-22T15:52:37.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthenticationFailureResult.cs",
+              "DocumentMoniker": "C:\\Users\\Joss\\Desktop\\BackEnd\\MACRO.WebApi\\Authorization\\AuthenticationFailureResult.cs",
+              "RelativeDocumentMoniker": "MACRO.WebApi\\Authorization\\AuthenticationFailureResult.cs",
+              "ToolTip": "C:\\Users\\Joss\\Desktop\\BackEnd\\MACRO.WebApi\\Authorization\\AuthenticationFailureResult.cs",
+              "RelativeToolTip": "MACRO.WebApi\\Authorization\\AuthenticationFailureResult.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-22T15:52:37.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ServicioSeguridad.cs",
+              "DocumentMoniker": "C:\\Users\\Joss\\Desktop\\BackEnd\\MACRO.Servicio\\ServicioSeguridad.cs",
+              "RelativeDocumentMoniker": "MACRO.Servicio\\ServicioSeguridad.cs",
+              "ToolTip": "C:\\Users\\Joss\\Desktop\\BackEnd\\MACRO.Servicio\\ServicioSeguridad.cs",
+              "RelativeToolTip": "MACRO.Servicio\\ServicioSeguridad.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAwwDQAAACIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-22T15:52:37.527Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

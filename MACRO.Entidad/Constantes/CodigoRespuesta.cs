@@ -1,0 +1,9 @@
+﻿public enum ERROR
+{
+    SIN_ERROR = 0,
+    SIN_ERROR_INFORMATIVO = 1,
+    ERROR_CONTROLADO = 2,
+    ERROR_NO_CONTROLADO = 3,
+    ERROR_SESION_NO_INICIADA = 4,
+    Unauthorized = 401
+}
