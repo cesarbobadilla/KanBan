@@ -1,0 +1,142 @@
+
+.sidebar {
+    background-color: #000000; /* Color oscuro para el fondo */
+    color: white; /* Texto blanco */
+    width: 250px; /* Ancho del sidebar */
+    height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+    position: fixed; /* Fija el sidebar en su posición */
+    top: 0;
+    left: 0;
+    transition: width 0.3s; /* Transición suave */
+}
+
+.sidebar.collapsed {
+    width: 80px; /* Ancho cuando está colapsado */
+}
+
+.sidebar .nav-link {
+    color: white;
+    transition: color 0.3s;
+}
+
+.sidebar .nav-link:hover {
+    color: #007bff; /* Color de texto al pasar el mouse */
+}
+
+.sidebar .nav-link.active {
+    background-color: #007bff; /* Fondo activo */
+}
+
+.sidebar .profile-icon {
+    font-size: 3rem; /* Tamaño del icono del perfil */
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+}
+
+.content {
+    margin-left: 250px; /* Desplaza el contenido para dejar espacio al sidebar */
+    padding: 20px;
+    width: calc(100% - 250px); /* Ajusta el ancho del contenido */
+}
+
+
+.card-body hr {
+border-top: 2px solid #646566f1;
+margin-top: 1rem;
+margin-bottom: 1rem;
+}
+
+.timeline {
+position: relative;
+padding-left: 20px;
+margin-bottom: 0;
+list-style: none;
+}
+
+.timeline::before {
+content: '';
+position: absolute;
+top: 0;
+bottom: 0;
+left: 20px;
+width: 2px;
+background: #ddd;
+}
+
+.timeline-item {
+position: relative;
+margin-bottom: 20px;
+}
+
+.timeline-item:last-child {
+margin-bottom: 0;
+}
+
+.timeline-icon {
+position: absolute;
+top: 0;
+left: -14px;
+width: 28px;
+height: 28px;
+border-radius: 50%;
+background: #fff;
+border: 2px solid #ddd;
+cursor: pointer;
+}
+
+.timeline-radio {
+display: none;
+}
+
+.timeline-radio:checked + .timeline-icon {
+background: #0d6efd;
+border-color: #0d6efd;
+}
+
+.timeline-content {
+margin-left: 40px;
+}
+
+
+.avatar {
+width: 40px;
+height: 40px;
+}
+
+
+.progress-circle {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: conic-gradient(
+            #007bff calc(var(--percentage) * 1%), #e9ecef 0
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin: auto;
+    }
+
+    .progress-circle::before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        background-color: #fff;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .progress-circle span {
+        font-size: 1.5rem;
+        color: #000;
+        z-index: 2;
+    }

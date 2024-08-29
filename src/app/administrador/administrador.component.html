@@ -1,0 +1,148 @@
+<div class="sidebar d-flex flex-column p-3">
+    <!-- Sidebar Component -->
+    <!-- Logo Section -->
+    <div class="mb-4 text-center">
+        <h2 class="text-primary">GesPro</h2>
+    </div>
+
+    <!-- Profile Section -->
+<div class="text-center mb-4">
+    <p class="fw-bold mb-0">{{ cUsuario }}</p>
+    <p class="text-muted small mb-0">{{ cCorreo }}</p>
+    <i class="pi pi-chevron-down mt-2"></i> <!-- Icono opcional para desplegar -->
+</div>
+
+    <!-- Menu Section -->
+    <ul class="nav flex-column mb-auto">
+        <li class="nav-item mb-2">
+            <a routerLink="/inicio" class="nav-link text-white d-flex align-items-center">
+                <i class="pi pi-home me-2"></i>
+                <span>Inicio</span>
+            </a>
+        </li>
+        
+        <li class="nav-item mb-2">
+            <a routerLink="/reportes" class="nav-link text-white d-flex align-items-center">
+                <i class="pi pi-chart-line me-2"></i>
+                <span>Reportes</span>
+            </a>
+        </li>
+    </ul>
+
+    <!-- Bottom Menu Section -->
+    <ul class="nav flex-column mt-auto">
+        <li class="nav-item mb-2">
+            <a routerLink="/ajustes" class="nav-link text-white d-flex align-items-center">
+                <i class="pi pi-cog me-2"></i>
+                <span>Ajustes del sistema</span>
+            </a>
+        </li>
+        <li class="nav-item mb-2">
+            <a routerLink="/ayuda" class="nav-link text-white d-flex align-items-center">
+                <i class="pi pi-info-circle me-2"></i>
+                <span>Centro de ayuda</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="/logout" class="nav-link text-white d-flex align-items-center">
+                <i class="pi pi-sign-out me-2"></i>
+                <span>Cerrar sesión</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- Main Content (Inicio Component) -->
+<div class="content">
+    <div class="container-fluid">
+        <!-- Search and Filter Section -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <!-- Search Bar -->
+            <div class="input-group" style="width: 300px;">
+                <span class="input-group-text"><i class="pi pi-search"></i></span>
+                <input type="text" class="form-control" placeholder="Buscar por nombre o apellido">
+            </div>
+
+            <!-- Create Button -->
+            <button class="btn btn-primary" (click)="displayDialog()">
+                <i class="pi pi-plus"></i> Crear
+            </button>
+        </div>
+
+        <!-- User Table Section -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users">
+                    <td>{{ user.cUsuario}}</td>
+                    <td>{{ user.cCorreo}}</td>
+                    <td>
+                        <button class="btn btn-link text-primary"><i class="pi pi-pencil"></i></button>
+                        <button class="btn btn-link text-danger"><i class="pi pi-trash"></i></button>
+                        <button class="btn btn-link" style="color: green;" (click)="fetchProjects(user)">
+                            <i class="pi pi-folder-open"></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Display Alert if No Projects Found -->
+    <div *ngIf="showAlert" class="alert alert-warning" role="alert">
+        No hay proyectos todavía.
+    </div>
+
+    <!-- Display Projects in Cards -->
+    <div class="row mt-4" *ngIf="selectedProjects.length > 0">
+        <div class="col-4" *ngFor="let project of selectedProjects">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{ project }}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dialog for Creating a New User -->
+    <p-dialog [(visible)]="display" [responsive]="true" [style]="{width: '400px'}" [baseZIndex]="10000">
+        <ng-template pTemplate="header">
+            <h4>Crear Usuario</h4>
+        </ng-template>
+        <ng-template pTemplate="content">
+            <form (ngSubmit)="createUser()">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombres y Apellidos</label>
+                    <input type="text" id="nombre" [(ngModel)]="user.nombre" name="nombre" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo</label>
+                    <input type="email" id="correo" [(ngModel)]="user.correo" name="correo" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contrasena" class="form-label">Contraseña</label>
+                    <input type="password" id="contrasena" [(ngModel)]="user.contrasena" name="contrasena"
+                        class="form-control" required>
+                </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" id="bContraseniaSegura" [(ngModel)]="user.bContraseniaSegura" name="bContraseniaSegura"
+                        class="form-check-input">
+                    <label for="bContraseniaSegura" class="form-check-label">Contraseña segura</label>
+                </div>
+                <button type="submit" class="btn btn-primary" style="background-color: #007bff; border-color: #007bff;">
+                    Crear
+                </button>
+            </form>
+        </ng-template>
+        <ng-template pTemplate="footer">
+            <button type="button" pButton icon="pi pi-times" (click)="display = false" label="Cancelar"></button>
+        </ng-template>
+    </p-dialog>
+    
+</div>

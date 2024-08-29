@@ -1,0 +1,51 @@
+.sidebar {
+    background-color: #000000; /* Color oscuro para el fondo */
+    color: white; /* Texto blanco */
+    width: 250px; /* Ancho del sidebar */
+    height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+    position: fixed; /* Fija el sidebar en su posición */
+    top: 0;
+    left: 0;
+    transition: width 0.3s; /* Transición suave */
+}
+
+.sidebar.collapsed {
+    width: 80px; /* Ancho cuando está colapsado */
+}
+
+.sidebar .nav-link {
+    color: white;
+    transition: color 0.3s;
+}
+
+.sidebar .nav-link:hover {
+    color: #007bff; /* Color de texto al pasar el mouse */
+}
+
+.sidebar .nav-link.active {
+    background-color: #007bff; /* Fondo activo */
+}
+
+.sidebar .profile-icon {
+    font-size: 3rem; /* Tamaño del icono del perfil */
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+}
+
+.content {
+    margin-left: 250px; /* Desplaza el contenido para dejar espacio al sidebar */
+    padding: 20px;
+    width: calc(100% - 250px); /* Ajusta el ancho del contenido */
+}
+
+.p-field {
+    margin-bottom: 1rem;
+}
+

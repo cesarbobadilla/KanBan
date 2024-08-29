@@ -1,0 +1,191 @@
+/* Project Header */
+.project-header {
+    margin: 20px 0;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Filter Section */
+.filter-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-group {
+    flex: 1;
+}
+
+.filter-group:first-child {
+    flex: 2;
+}
+
+.filter-group:last-child {
+    flex: 0.5;
+}
+
+.filter-group label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.filter-group button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card Deck */
+.card-deck {
+    display: flex;
+    gap: 20px;
+}
+
+/* Card */
+.card {
+    flex: 1;
+    max-width: calc(100% / 3 - 15px);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-header .icon-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.card-header .title-subtitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.card-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.card-description {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card-footer .footer-item {
+    display: flex;
+    align-items: center;
+}
+
+.card-footer .footer-item i {
+    margin-right: 5px;
+    color: #007bff;
+}
+
+.card-footer .footer-item span {
+    font-size: 14px;
+    color: #555;
+}
+
+.card-options {
+    font-size: 20px;
+    cursor: pointer;
+    color: #888;
+}
+
+.card-separator {
+    height: 1px;
+    background-color: #ddd;
+    margin: 15px 0;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #000000;
+    color: white;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.sidebar.collapsed {
+    width: 80px;
+}
+
+.sidebar .nav-link {
+    color: white;
+    transition: color 0.3s;
+}
+
+.sidebar .nav-link:hover {
+    color: #007bff;
+}
+
+.sidebar .nav-link.active {
+    background-color: #007bff;
+}
+
+.sidebar .profile-icon {
+    font-size: 3rem;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+}
+
+/* Content */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+.content-wrapper {
+    margin-left: 250px; /* Desplaza el contenido para dejar espacio al sidebar */
+    padding: 20px;
+    width: calc(100% - 250px); /* Ajusta el ancho del contenido */
+}

@@ -1,0 +1,115 @@
+<div class="sidebar d-flex flex-column p-3">
+    <!-- Sidebar Component -->
+    <!-- Logo Section -->
+    <div class="mb-4 text-center">
+        <h2 class="text-primary">GesPro</h2>
+    </div>
+
+    <!-- Profile Section -->
+    <div class="text-center mb-4">
+        <p class="fw-bold mb-0">{{ cUsuario }}</p>
+        <p class="text-muted small mb-0">{{ cCorreo }}</p>
+        <i class="pi pi-chevron-down mt-2"></i> <!-- Icono opcional para desplegar -->
+    </div>
+
+    <!-- Menu Section -->
+    <ul class="nav flex-column mb-auto">
+        <li class="nav-item mb-2">
+            <a routerLink="/liderprincipal" class="nav-link text-white active d-flex align-items-center">
+                <i class="pi pi-home me-2"></i>
+                <span>Inicio</span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <!-- Bottom Menu Section -->
+    <ul class="nav flex-column mt-auto">
+        <li class="nav-item mb-2">
+            <a routerLink="/ajustes" class="nav-link text-white d-flex align-items-center">
+                <i class="pi pi-cog me-2"></i>
+                <span>Ajustes del sistema</span>
+            </a>
+        </li>
+        <li class="nav-item mb-2">
+            <a routerLink="/ayuda" class="nav-link text-white d-flex align-items-center">
+                <i class="pi pi-info-circle me-2"></i>
+                <span>Centro de ayuda</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="/logout" class="nav-link text-white d-flex align-items-center">
+                <i class="pi pi-sign-out me-2"></i>
+                <span>Cerrar sesión</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="content-wrapper">
+    <div class="header-bar">
+        <div class="search-bar">
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Buscar">
+            </div>
+        </div>
+    </div>
+
+    <div class="project-header">
+        <h1 class="title">Proyectos</h1>
+        <p class="subtitle">Gestiona los proyectos y revisa información acerca de ellos</p>
+    </div>
+
+    <div class="filter-row">
+        <div class="filter-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" class="form-control">
+        </div>
+        <div class="filter-group">
+            <label for="estado">Estado</label>
+            <select id="estado" class="form-select">
+                <option selected>Seleccione estado</option>
+                <option value="1">Activo</option>
+                <option value="2">Inactivo</option>
+                <option value="3">Finalizado</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label>&nbsp;</label>
+            <button class="btn btn-primary w-100">
+                <i class="fas fa-filter"></i> Filtrar
+            </button>
+        </div>
+    </div>
+
+
+    <div class="card-deck">
+        <div *ngFor="let proyecto of proyectos" class="card">
+            <div class="card-body">
+                <div class="card-header">
+                    <div class="d-flex align-items-center">
+                        <div class="title-subtitle">
+                            <!-- Pasar nProyecto y nUsuarioCreador al método goToDatosProyecto -->
+                            <div class="card-title"
+                                (click)="goToDatosProyecto(proyecto.nProyecto, proyecto.nUsuarioCreador)">
+                                {{ proyecto.cNombre }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-options">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+
+                <div class="card-description">
+                    {{ proyecto.cDescripcion }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>

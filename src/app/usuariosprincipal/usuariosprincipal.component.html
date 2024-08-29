@@ -1,0 +1,211 @@
+<body>
+    
+    <div class="sidebar d-flex flex-column p-3">
+        <!-- Logo Section -->
+        <div class="mb-4 text-center">
+            <h2 class="text-primary">GesPro</h2>
+        </div>
+    
+        <!-- Profile Section -->
+        <div class="text-center mb-4">
+            <p class="fw-bold mb-0">{{ cUsuario }}</p>
+            <p class="text-muted small mb-0">{{ cCorreo }}</p>
+            <i class="pi pi-chevron-down mt-2"></i> <!-- Icono opcional para desplegar -->
+        </div>
+    
+        <!-- Menu Section -->
+        <ul class="nav flex-column mb-auto">
+            <li class="nav-item mb-2">
+                <a routerLink="/liderprincipal" class="nav-link active d-flex align-items-center">
+                    <i class="pi pi-home me-2"></i>
+                    <span>Inicio</span>
+                </a>
+            </li>
+            
+        </ul>
+    
+        <!-- Bottom Menu Section -->
+        <ul class="nav flex-column mt-auto">
+            <li class="nav-item mb-2">
+                <a routerLink="/ajustes" class="nav-link d-flex align-items-center">
+                    <i class="pi pi-cog me-2"></i>
+                    <span>Ajustes del sistema</span>
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a routerLink="/ayuda" class="nav-link d-flex align-items-center">
+                    <i class="pi pi-info-circle me-2"></i>
+                    <span>Centro de ayuda</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="/logout" class="nav-link d-flex align-items-center">
+                    <i class="pi pi-sign-out me-2"></i>
+                    <span>Cerrar sesión</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="content p-4">
+        <div class="container-fluid">
+            <!-- Encabezado del Proyecto -->
+            <div class="row mb-4">
+                <div class="col">
+                    <h1>{{ datosEntregable.cNombre}}</h1>
+                  </div>
+            </div>
+    
+            <div class="row">
+                <!-- Columna Izquierda (Datos generales y Estadísticas) -->
+                <div class="col-lg-8 mb-4">
+                    <!-- Datos Generales -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between align-items-center">Datos generales
+                            </h5>
+                            <hr class="my-3">
+                            <p class="card-text"><strong>Fecha Inicio:</strong> {{ datosEntregable.tFechaInicio | date:'dd/MM/yyyy'}}</p>
+                            <p class="card-text"><strong>Fecha Fin:</strong> {{ datosEntregable.tFechaFin | date:'dd/MM/yyyy'}}</p>
+                            <p class="card-text"><strong>Estado:</strong> {{ datosEntregable.bEstado ? 'Activo': 'Inactivo'}}</p>
+                        </div>
+                    </div>
+    
+                    <!-- Estadísticas -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Tareas</h5>
+                            <hr class="my-3">
+                            <div class="row text-center">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                          <th>Nombre</th>
+                                          <th>Responsable</th>
+                                          <th>Prioridad</th>
+                                          <th>Desde - Hasta</th>
+                                          <th>Acciones</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr *ngFor="let tarea of tareas">
+                                          <td>{{ tarea.cNombre }}</td>
+                                          <td>{{ tarea.cResponsable }}</td>
+                                          <td>{{ tarea.cPrioridad }}</td>
+                                          <td>{{ tarea.tFechaInicio | date:'dd/MM/yyyy' }} - {{ tarea.tFechaFin | date:'dd/MM/yyyy' }}</td>
+                                 
+                                          <td>
+                                            <button class="btn btn-link text-primary" (click)="showDialog(tarea)">
+                                                <i class="pi pi-pencil"></i>
+                                              </button>
+                                            <button class="btn btn-link text-danger"><i class="pi pi-trash"></i></button>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Columna Derecha (Etapas y Usuarios) -->
+                <div class="col-lg-4">
+                    <!-- Etapas -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between align-items-center">
+                                Archivos
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="pi pi-plus"></i>
+                                </button>
+                            </h5>
+                            <hr class="my-3">
+                            <!-- Lista de Etapas -->
+                            <ul class="timeline">
+                                <li class="timeline-item" *ngFor="let archivo of archivos">
+                                  <div class="timeline-content">
+                                    <h6>{{ archivo.cNombre }} <small class="text-muted">{{ archivo.tFechaSubida | date:'dd/MM/yyyy' }}</small></h6>
+                                    
+                                  </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+    
+                    <!-- Usuarios -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-between align-items-center">Comentarios
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="pi pi-plus"></i>
+                                </button>
+                            </h5>
+                            <hr class="my-3">
+
+                            <!-- Lista de Usuarios -->
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center mb-3" *ngFor="let comentario of comentarios">
+                                  <div>
+                                    <strong>{{ comentario.usuario }}</strong> <small class="text-muted">({{ comentario.fecha | date:'dd/MM/yyyy' }})</small><br>
+                                    <small class="text-muted">{{ comentario.texto }}</small>
+                                  </div>
+                                </li>
+                              </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Diálogo para editar tarea -->
+<p-dialog header="Editar Tarea" [(visible)]="displayDialog" [modal]="true" [responsive]="true" [style]="{'width': '500px'}">
+    <div class="p-fluid">
+      <div class="p-field">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" [(ngModel)]="selectedTarea.cNombre" type="text" pInputText />
+      </div>
+      <div class="p-field">
+  <label for="responsable">Responsable</label>
+  <select
+    id="responsable"
+    [(ngModel)]="selectedTarea.cResponsable"
+    placeholder="Seleccionar Responsable">
+    <option *ngFor="let usuario of usuarios" [value]="usuario.cUsuario">
+      {{ usuario.cNombre }} ({{ usuario.cUsuario }})
+    </option>
+  </select>
+</div>
+
+      <div class="p-field">
+        <label for="prioridad">Prioridad</label>
+        <select
+          id="prioridad"
+          [(ngModel)]="selectedTarea.cPrioridad"
+          class="form-control"
+        >
+          <option value="1">ALTO</option>
+          <option value="2">MEDIO</option>
+          <option value="3">BAJO</option>
+        </select>
+      </div>
+      <p-footer>
+        <button type="button" pButton label="Guardar" (click)="saveTask()"></button>
+        <button type="button" pButton label="Cancelar" (click)="displayDialog = false"></button>
+      </p-footer>
+    </div>
+  </p-dialog>
+
+    <!-- Incluir Bootstrap JS (opcional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // JavaScript para actualizar el progreso dinámicamente
+    document.querySelectorAll('.progress-circle').forEach(circle => {
+        const percentageSpan = circle.querySelector('.percentage-span');
+        const percentage = parseInt(percentageSpan.textContent);
+        circle.style.setProperty('--percentage', percentage);
+    });
+</script>
+</body>
